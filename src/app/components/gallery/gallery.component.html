@@ -1,0 +1,11 @@
+<div class="p-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4" (click)="takePhoto()">
+        Take a photo
+    </button>
+
+    <div class="grid grid-cols-2 gap-4">
+        <div *ngFor="let photo of photos" class="w-full h-40 bg-gray-200">
+            <img [src]="photo.webviewpath" alt="photo" class="w-full h-full object-cover" />
+        </div>
+    </div>
+</div>
